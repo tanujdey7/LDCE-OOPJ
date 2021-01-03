@@ -3,11 +3,11 @@ class Student {
     String gender, name;
     static int objectCount = 0;
 
-    Student(String n, String g, int no, int m) {
-        enrollment_number = no;
-        marks = m;
-        name = n;
-        gender = g;
+    Student(String name, String gender, int enrollment_no, int marks) {
+        this.enrollment_number = enrollment_no;
+        this.marks = marks;
+        this.name = name;
+        this.gender = gender;
         objectCount++;
     }
 
