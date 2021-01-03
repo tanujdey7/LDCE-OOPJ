@@ -14,8 +14,8 @@ class demo {
             num /= 10;
         }
         if (answer == temp)
-            System.out.println("Amstrong number");
+            System.out.println("Armstrong number");
         else
-            System.out.println("Not an Amstrong number");
+            System.out.println("Not an Armstrong number");
     }
 }
