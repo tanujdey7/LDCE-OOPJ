@@ -74,12 +74,16 @@ class Driver {
 class Account {
     int accountNumber;
     int balance;
+
+    Account(int accountNumber, int balance) {
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+    }
 }
 
 class Savings extends Account {
     Savings() {
-        this.accountNumber = 1031142351;
-        this.balance = 123465;
+        super(1031142351, 123467);
     }
 
     int interestRate = 6;
@@ -112,8 +116,7 @@ class Current extends Account {
     int overdraftLimit = 5000;
 
     Current() {
-        this.accountNumber = 2018423343;
-        this.balance = 10;
+        super(2018423343, 10);
     }
 
     void withdraw(int w) {
