@@ -1,3 +1,8 @@
+/*
+- (c) github.com/tanujdey7 
+- MIT License
+- Contact for code review
+*/
 class A {
     static int x = 10;
 }

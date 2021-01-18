@@ -1,3 +1,8 @@
+/*
+- (c) github.com/tanujdey7 
+- MIT License
+- Contact for code review
+*/
 class demo {
     public static void main(String[] args) {
         int arr1[][] = { { 7, 2, 3 }, { 3, 4, 5 } };

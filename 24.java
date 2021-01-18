@@ -1,3 +1,8 @@
+/*
+- (c) github.com/tanujdey7 
+- MIT License
+- Contact for code review
+*/
 interface Exam {
     public boolean pass(int mark);
 }
