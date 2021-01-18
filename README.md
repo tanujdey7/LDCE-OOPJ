@@ -4,15 +4,24 @@ Syllabus for Master of Computer Applications, 1st Semester <br>
 Subject Name: Oriented Programming in JAVA (OOPJ)<br>
 Subject Code: 619401<br>
 
-> # Installation
+> ## Installation
+
+`git clone https://github.com/tanujdey7/LDCE-OOPJ`
+
+> ## Run Code
+##### If you are using JDK 8 run using following code
+```
+javac <program_name>.java
+java classname
+```
+##### If you are using JDK 10 or above run using following code
 
 ```
-git clone https://github.com/tanujdey7/LDCE-OOPJ
+java <programe_name>.java
 ```
-- Contact for code correction
 
-> Code Review 
-
+> Code Review <br>
+Contact for code correction
 ```
 git add .
 git commit -m "code fixed"
