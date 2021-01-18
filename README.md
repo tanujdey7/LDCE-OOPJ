@@ -9,8 +9,6 @@ Subject Code: 619401<br>
 ```
 git clone https://github.com/tanujdey7/LDCE-OOPJ
 ```
-
-> Copyright (c) TANUJ DEY, LDCE
 - Contact for code correction
 
 > Code Review 
@@ -20,4 +18,6 @@ git add .
 git commit -m "code fixed"
 git push -u origin master
 ```
+
+> ### Copyright (c) TANUJ DEY, LDCE
 
