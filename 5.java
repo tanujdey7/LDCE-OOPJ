@@ -1,21 +1,34 @@
-import java.util.Scanner;
+class a extends Thread {
+    public void run() {
+        for (int i = 0; i < 20; i++) {
+            System.out.println("A");
+        }
+    }
+}
+
+class b extends Thread {
+    public void run() {
+        for (int i = 0; i < 30; i++) {
+            System.out.println("B");
+        }
+    }
+}
+
+class c extends Thread {
+    public void run() {
+        for (int i = 0; i < 15; i++) {
+            System.out.println("C");
+        }
+    }
+}
 
 class demo {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter Number: ");
-        int num = sc.nextInt();
-        int n;
-        int answer = 0;
-        int temp = num;
-        while (num != 0) {
-            n = num % 10;
-            answer += Math.pow(n, 3);
-            num /= 10;
-        }
-        if (answer == temp)
-            System.out.println("Armstrong number");
-        else
-            System.out.println("Not an Armstrong number");
+        Thread a = new a();
+        Thread b = new b();
+        Thread c = new c();
+        a.start();
+        b.start();
+        c.start();
     }
 }

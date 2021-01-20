@@ -1,12 +1,26 @@
-import java.util.Scanner;
+class thread1 extends Thread {
+    public void run() {
+        for (int i = 1; i <= 50; i++) {
+            if (i % 2 == 0)
+                System.out.println(i + " " + Thread.currentThread().getName());
+        }
+    }
+}
+
+class thread2 extends Thread {
+    public void run() {
+        for (int i = 1; i <= 50; i++) {
+            if (i % 2 == 1)
+                System.out.println(i + " " + Thread.currentThread().getName());
+        }
+    }
+}
 
 class demo {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter Number: ");
-        int x = sc.nextInt();
-        System.out.print("Enter Power: ");
-        int n = sc.nextInt();
-        System.out.println(Math.pow(x, n));
+        Thread t1 = new thread1();
+        Thread t2 = new thread2();
+        t1.start();
+        t2.start();
     }
 }
