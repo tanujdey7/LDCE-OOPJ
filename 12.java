@@ -22,6 +22,7 @@ class Student {
         System.out.println("Student Name: " + name);
         System.out.println("Student Gender: " + gender);
         System.out.println();
+        objectCount++;
     }
 
     public static void main(String[] args) {
