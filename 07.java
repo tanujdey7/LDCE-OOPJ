@@ -21,7 +21,7 @@ class demo {
         } else if (b > a && b > c && b > d) {
             System.out.println("Number 2 is the greatest");
         } else if (c > a && c > b && c > d) {
-            System.out.println("Number 3 is the gratest");
+            System.out.println("Number 3 is the greatest");
         } else {
             System.out.println("Number 4 is the greatest");
         }

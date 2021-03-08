@@ -7,71 +7,73 @@ import java.util.Scanner;
 
 class Driver {
     public static void main(String[] args) {
-        System.out.println(
-                "Enter 1. To Check Balance\nEnter 2. To Deposit\nEnter 3. To Withdraw\nEnter 4. Exit\n------------------------------------------");
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        switch (n) {
-            case 1:
-                System.out.println(
-                        "Select Account type: \n1. Savings\n2. Current\n------------------------------------------");
-                int a = sc.nextInt();
-                if (a == 1) {
-                    Savings s = new Savings();
-                    s.display();
-                } else {
-                    Current current = new Current();
-                    current.display();
-                }
-                break;
-            case 2:
-                System.out.println(
-                        "Select Account type: \n1. Savings\n2. Current\n------------------------------------------");
-                int b = sc.nextInt();
-                if (b == 1) {
-                    Savings s = new Savings();
-                    System.out.println("\n------------------------------------------");
-                    s.display();
-                    System.out.print("Enter money to deposit: ");
-                    int d = sc.nextInt();
-                    s.deposit(d);
-                } else {
-                    Current current = new Current();
-                    System.out.println("\n------------------------------------------");
-                    current.display();
-                    System.out.print("Enter money to deposit: ");
-                    int d = sc.nextInt();
-                    current.deposit(d);
-                }
-                break;
-            case 3:
-                System.out.println(
-                        "Select Account type: \n1. Savings\n2. Current\n------------------------------------------");
-                int c = sc.nextInt();
-                if (c == 1) {
-                    Savings s = new Savings();
-                    System.out.println("\n------------------------------------------");
-                    s.display();
-                    System.out.print("Enter money to withdraw: ");
-                    int w = sc.nextInt();
-                    s.deposit(w);
-                } else {
-                    Current current = new Current();
-                    System.out.println("\n------------------------------------------");
-                    current.display();
-                    System.out.print("Enter money to withdraw: ");
-                    int w = sc.nextInt();
-                    current.withdraw(w);
-                }
-                break;
-            case 4:
-                System.out.println("Thanks Visit Us Again.!");
-                sc.close();
-                System.exit(0);
-            default:
-                System.out.println("Invalid input... Bye!");
-                sc.close();
-                System.exit(0);
+        while(true) {
+            System.out.println(
+                    "Enter 1. To Check Balance\nEnter 2. To Deposit\nEnter 3. To Withdraw\nEnter 4. Exit\n------------------------------------------");
+            int n = sc.nextInt();
+            switch (n) {
+                case 1:
+                    System.out.println(
+                            "Select Account type: \n1. Savings\n2. Current\n------------------------------------------");
+                    int a = sc.nextInt();
+                    if (a == 1) {
+                        Savings s = new Savings();
+                        s.display();
+                    } else {
+                        Current current = new Current();
+                        current.display();
+                    }
+                    break;
+                case 2:
+                    System.out.println(
+                            "Select Account type: \n1. Savings\n2. Current\n------------------------------------------");
+                    int b = sc.nextInt();
+                    if (b == 1) {
+                        Savings s = new Savings();
+                        System.out.println("\n------------------------------------------");
+                        s.display();
+                        System.out.print("Enter money to deposit: ");
+                        int d = sc.nextInt();
+                        s.deposit(d);
+                    } else {
+                        Current current = new Current();
+                        System.out.println("\n------------------------------------------");
+                        current.display();
+                        System.out.print("Enter money to deposit: ");
+                        int d = sc.nextInt();
+                        current.deposit(d);
+                    }
+                    break;
+                case 3:
+                    System.out.println(
+                            "Select Account type: \n1. Savings\n2. Current\n------------------------------------------");
+                    int c = sc.nextInt();
+                    if (c == 1) {
+                        Savings s = new Savings();
+                        System.out.println("\n------------------------------------------");
+                        s.display();
+                        System.out.print("Enter money to withdraw: ");
+                        int w = sc.nextInt();
+                        s.deposit(w);
+                    } else {
+                        Current current = new Current();
+                        System.out.println("\n------------------------------------------");
+                        current.display();
+                        System.out.print("Enter money to withdraw: ");
+                        int w = sc.nextInt();
+                        current.withdraw(w);
+                    }
+                    break;
+                case 4:
+                    System.out.println("Thanks Visit Us Again.!");
+                    sc.close();
+                    System.exit(0);
+                default:
+                    System.out.println("Invalid input... Bye!");
+                    sc.close();
+                    System.exit(0);
+            }
         }
     }
 }

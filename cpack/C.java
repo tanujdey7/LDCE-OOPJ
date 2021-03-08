@@ -1,6 +1,6 @@
 package cpack;
 
-import apack.*;
+import apack.A;
 
 public class C {
     public void display() {

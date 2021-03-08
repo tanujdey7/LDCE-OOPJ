@@ -17,6 +17,5 @@ class demo {
             if (count > 0)
                 System.out.print("Occurance of " + i + " is " + count + " times\n");
         }
-
     }
 }

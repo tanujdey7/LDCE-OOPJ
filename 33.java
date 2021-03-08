@@ -23,7 +23,9 @@ class demo {
                 System.out.print("Enter amount to withdraw: ");
                 w = sc.nextInt();
                 bal -= w;
-                System.out.println("Your balance is: " + bal);
+                if(bal>0) {
+                    System.out.println("Your balance is: " + bal);
+                }
                 if (bal < 0) {
                     throw new MyException("Not Sufficient Funds");
                 }

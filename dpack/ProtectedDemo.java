@@ -1,7 +1,7 @@
 package dpack;
 
-import cpack.*;
-import bpack.*;
+import cpack.C;
+import bpack.B;
 
 public class ProtectedDemo {
     public static void main(String[] args) {

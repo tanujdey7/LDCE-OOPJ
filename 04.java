@@ -12,6 +12,6 @@ class demo {
         int x = sc.nextInt();
         System.out.print("Enter Power: ");
         int n = sc.nextInt();
-        System.out.println(Math.pow(x, n));
+        System.out.println((int)Math.pow(x, n));
     }
 }

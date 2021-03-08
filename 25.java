@@ -1,10 +1,11 @@
+
 /*
 - (c) github.com/tanujdey7 
 - MIT License
 - Contact for code review
 */
 import Student.*;
-import Exam.*;
+import Exam.Result;
 import java.util.Scanner;
 
 class demo {
