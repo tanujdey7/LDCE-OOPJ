@@ -5,9 +5,19 @@
 */
 class demo {
     public static void main(String[] args) {
-        System.out.println("Number of arguments: " + args.length);
-        for (int i = 0; i < args.length; i++) {
-            System.out.println((i + 1) + " Student Name: " + args[i]);
+        int num = 12321;
+        int cnum = 12321;
+        int rem = 0;
+        int rev = 0;
+        while(num!=0) {
+            rem = num % 10;
+            rev = rev * 10 + rem;
+            num /= 10;
+        }
+        if(cnum == rev) {
+            System.out.println("Palindrome Number");
+        } else {
+            System.out.println("Not a Palindrome Number");
         }
     }
 }
