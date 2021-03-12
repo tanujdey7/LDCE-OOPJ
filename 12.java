@@ -7,13 +7,22 @@ class Student {
     int enrollment_number, marks;
     String gender, name;
     static int objectCount = 0;
-
+    Student() {
+        enrollment_number = 0000;
+        marks = 0;
+        gender = "NA";
+        name = "NA";
+    }
     Student(String n, String g, int no, int m) {
         enrollment_number = no;
         marks = m;
         name = n;
         gender = g;
         objectCount++;
+    }
+    Student(String n, int m) {
+        name = n;
+        marks = m;
     }
 
     void display() {
@@ -28,7 +37,7 @@ class Student {
     public static void main(String[] args) {
         Student student1 = new Student("Tanuj", "Male", 151635, 100);
         Student student2 = new Student("Virat Kohli", "Male", 18, 99);
-        Student student3 = new Student("Lionel Messi", "Male", 10, 70);
+        Student student3 = new Student("Lionel Messi", 70);
         student1.display();
         student2.display();
         student3.display();
